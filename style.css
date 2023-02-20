@@ -33,17 +33,37 @@
   padding-left: 48px;
   padding-right: 48px;
   padding-top: 48px;
+  width: 100%;
 }
 .container .grid .grid-item#sendan {
   background-color: var(--Bright-orange);
+  border-radius: 10px 0 0 10px;
+  -webkit-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  -ms-border-radius: 10px 0 0 10px;
+  -o-border-radius: 10px 0 0 10px;
+}
+.container .grid .grid-item#sendan a {
+  color: var(--Bright-orange);
 }
 
 .container .grid .grid-item#suv {
   background-color: var(--Dark-cyan);
 }
+.container .grid .grid-item#suv a {
+  color: var(--Dark-cyan);
+}
 
 .container .grid .grid-item#luxury {
   background-color: var(--Very-dark-cyan);
+  border-radius: 0 10px 10px 0;
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  -ms-border-radius: 0 10px 10px 0;
+  -o-border-radius: 0 10px 10px 0;
+}
+.container .grid .grid-item#luxury a {
+  color: var(--Very-dark-cyan);
 }
 .container .grid .grid-item .image {
   margin-bottom: 32px;
@@ -63,7 +83,7 @@
 }
 .container .grid .grid-item a {
   text-decoration: none;
-  color: var(--Very-light-gray-background-headings-buttons);
+  background-color: var(--Very-light-gray-background-headings-buttons);
   padding: 10px 29px 15px 30px;
   font-size: 15.5px;
   border: 1px solid var(--Very-light-gray-background-headings-buttons);
@@ -72,4 +92,52 @@
   -moz-border-radius: 25px;
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
+}
+.container .grid .grid-item a:hover {
+  color: var(--Very-light-gray-background-headings-buttons) !important;
+  background-color: transparent;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  .container {
+    padding: 88px 0;
+  }
+  .container .grid {
+    padding: 0 24px;
+    display: block;
+  }
+  .container .grid .grid-item {
+    height: 442px;
+  }
+  .container .grid .grid-item#sendan {
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -ms-border-radius: 10px 10px 0 0;
+    -o-border-radius: 10px 10px 0 0;
+}
+  .container .grid .grid-item#luxury {
+    border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    -ms-border-radius: 0 0 10px 10px;
+    -o-border-radius: 0 0 10px 10px;
+  }
+  .container .grid .grid-item p {
+    margin-bottom: 35px;
+  }
+  .attribution {
+    bottom: -78%;
+  }
 }
