@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  /* Primary */
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* Neutral */
+  --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding-top: 171px;
+  background-color: var(--Very-light-gray-background-headings-buttons);
+  display: flex;
+  justify-content: center;
+}
+.container .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 307px);
+  grid-template-rows: 500px;
+}
+.container .grid .grid-item {
+  font-family: "Lexend Deca", sans-serif;
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-top: 48px;
+}
+.container .grid .grid-item#sendan {
+  background-color: var(--Bright-orange);
+}
+
+.container .grid .grid-item#suv {
+  background-color: var(--Dark-cyan);
+}
+
+.container .grid .grid-item#luxury {
+  background-color: var(--Very-dark-cyan);
+}
+.container .grid .grid-item .image {
+  margin-bottom: 32px;
+}
+.container .grid .grid-item h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 23px;
+  color: var(--Very-light-gray-background-headings-buttons);
+}
+.container .grid .grid-item p {
+  color: var(--Transparent-white-paragraphs);
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 93px;
+}
+.container .grid .grid-item a {
+  text-decoration: none;
+  color: var(--Very-light-gray-background-headings-buttons);
+  padding: 10px 29px 15px 30px;
+  font-size: 15.5px;
+  border: 1px solid var(--Very-light-gray-background-headings-buttons);
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
